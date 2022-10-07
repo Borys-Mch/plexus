@@ -22,4 +22,4 @@ export {
     Keep,
     Contacts,
     Footer,
-}
+};
