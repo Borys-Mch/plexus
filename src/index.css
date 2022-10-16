@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -24,29 +26,11 @@ body {
   background: #1A1A2F;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.home {
+  background: rgb(41,22,70);
+  background: linear-gradient(135deg, rgba(41,22,70,1) 0%, rgba(93,48,118,1) 12%, rgba(116,59,140,1) 21%, rgba(150,75,171,1) 32%, rgba(162,81,182,1) 44%, rgba(138,69,160,1) 55%, rgba(93,47,118,1) 65%, rgba(67,34,94,1) 77%, rgba(54,28,82,1) 88%, rgba(41,22,70,1) 100%);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {

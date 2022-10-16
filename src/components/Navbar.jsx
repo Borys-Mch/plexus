@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar'>
+    <nav className="w-full flex py-6 justify-between items-center relative">
       <img src={logo} alt="logo" className='w-[125px] h-[61px]'/>
       <div className="flex flex-1 justify-end items-center">
         <h2 className='sm:flex hidden pr-[77px] text-white'>Get in touch</h2>
@@ -17,7 +17,7 @@ export const Navbar = () => {
           className="w-[28px] h-[28px] object-contain"
           onClick={()  =>  setToggle((prev) => !prev)} 
         />
-        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gray-700 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
           <ul>
             {navLinks.map((nav, index) => (
               <li 

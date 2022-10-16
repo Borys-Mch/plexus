@@ -2,10 +2,12 @@ import { Business, Connecting, Constant, Contacts, Footer, Home, Keep, Navbar, O
 
 const App = () => (
   <div  className="bg-primary w-full overflow-hidden">
-    <div className='sm:px-16 px-6 flex justify-center items-center'>
+    <div className='home px-6 flex justify-center items-center'>
       <div className='xl:max-w-[1280px] w-full'>
         <Navbar />
         <Home />
+      </div>
+    </div>
         <Business />
         <Connecting />
         <Constant />
@@ -15,8 +17,6 @@ const App = () => (
         <Keep />
         <Contacts />
         <Footer />
-      </div>
-    </div>
   </div>
 );
 
