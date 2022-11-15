@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center relative">
+    <nav id='home' className="w-full flex py-6 justify-between items-center relative">
       <img src={logo} alt="logo" className='w-[125px] h-[61px]'/>
       <div className="flex flex-1 justify-end items-center">
         <h2 className='sm:flex hidden pr-[77px] text-white'>Get in touch</h2>
