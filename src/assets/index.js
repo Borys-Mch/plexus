@@ -8,6 +8,10 @@ import dot4 from "./dot-4.svg";
 import ordinary1 from "./ordinary1.svg";
 import ordinary2 from "./ordinary2.svg";
 import arrow from "./arrow.svg";
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import twitter from "./twitter.svg";
 
 export {
   logo,
@@ -20,4 +24,8 @@ export {
   ordinary1,
   ordinary2,
   arrow,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
 };

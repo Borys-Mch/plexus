@@ -18,7 +18,7 @@ export const Contacts = () => {
     <section
       id="contacts"
       className={`${styles.sectionBox} contacts lg:h-[955px] md:h-[1140px] h-[1000px]`}>
-      <div className="flex w-full absolute justify-between top-24 font-bold text-[112px] text-[#ffffff80]">
+      <div className="flex w-full absolute justify-between top-24 font-bold md:text-[112px] text-[44px] text-[#ffffff80]">
         <span>C</span>
         <span>O</span>
         <span>N</span>
@@ -30,15 +30,19 @@ export const Contacts = () => {
       </div>
 
       <div className={`${styles.sectionSecond}`}>
-        <div className="flex flex-wrap lg:pt-[200px]  pt-24">
-          <div className="lg:w-[50%] w-full pr-14">
+        <div className="flex flex-wrap justify-between lg:pt-[200px]  md:pt-24 pt-48">
+          <div className="lg:w-[40%] w-full">
             <p className={`${styles.textParagraph}`}>
-              The path to profitable marketing has never been clearer. Be bold.
-              Start your journey today.
+              The path to profitable marketing has never been clearer. <br /> Be
+              bold. Start your journey today.
             </p>
-            <input type="text" />
+            <input
+              className="p-5 mt-7 mb-[70px] rounded-md w-[100%]"
+              type="text"
+              placeholder="Write your email"
+            />
 
-            <div className="circle flex relative justify-center items-center rounded-[50%] w-[200px] h-[200px] mt-5">
+            <div className="circle lg:flex hidden relative  justify-center items-center rounded-[50%] w-[200px] h-[200px]">
               <div
                 className="absolute w-[30px] h-[30px] bg-cover rounded-[50%]"
                 style={{ backgroundImage: `url(${arrow})` }}></div>
@@ -48,7 +52,7 @@ export const Contacts = () => {
             </div>
           </div>
 
-          <div className="lg:w-[50%] w-full pl-14">
+          <div className="lg:w-[40%] w-full">
             <div>
               <p className={`${styles.textParagraph}`}>Call us</p>
               <h3 className="font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]">
@@ -66,6 +70,14 @@ export const Contacts = () => {
               <h3 className="font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]">
                 20-22 Wenlock Road London N1 7GU
               </h3>
+            </div>
+            <div className="circle flex lg:hidden relative  justify-center items-center rounded-[50%] w-[200px] h-[200px] my-16 mx-auto">
+              <div
+                className="absolute w-[30px] h-[30px] bg-cover rounded-[50%]"
+                style={{ backgroundImage: `url(${arrow})` }}></div>
+              <div className="absolute w-[100%] h-[100%] animate-spin-slow">
+                <p>{textRnd}</p>
+              </div>
             </div>
           </div>
         </div>
