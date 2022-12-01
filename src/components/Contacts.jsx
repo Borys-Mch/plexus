@@ -1,11 +1,24 @@
-import React from 'react';
-import styles from '../style';
+import React from "react";
+import styles from "../style";
+import { arrow } from "../assets";
 
 export const Contacts = () => {
-  return (
-    <section id='contacts' className={`${styles.sectionBox} contacts lg:h-[955px] md:h-[1140px] h-[1000px]`}>
+  const str =
+    "Start to work   Start to work   Start to work   Start to work   ";
+  const textRnd = str.split("").map((char, i) => (
+    <span
+      key={i}
+      style={{ transform: `rotate(${i * 5.6}deg)`, transformOrigin: `0 100px` }}
+      className="absolute left-[50%] text-[0.9em]">
+      {char}
+    </span>
+  ));
 
-      <div className='flex w-full absolute justify-between top-24 font-bold text-[112px] text-[#ffffff80]'>
+  return (
+    <section
+      id="contacts"
+      className={`${styles.sectionBox} contacts lg:h-[955px] md:h-[1140px] h-[1000px]`}>
+      <div className="flex w-full absolute justify-between top-24 font-bold text-[112px] text-[#ffffff80]">
         <span>C</span>
         <span>O</span>
         <span>N</span>
@@ -17,31 +30,46 @@ export const Contacts = () => {
       </div>
 
       <div className={`${styles.sectionSecond}`}>
-        <div className='flex flex-wrap lg:pt-[200px]  pt-24'>
-          <div className='lg:w-[50%] w-full pr-14'>
-            <p className={`${styles.textParagraph}`}>The path to profitable marketing has never been clearer. Be bold. Start your journey today.</p>
+        <div className="flex flex-wrap lg:pt-[200px]  pt-24">
+          <div className="lg:w-[50%] w-full pr-14">
+            <p className={`${styles.textParagraph}`}>
+              The path to profitable marketing has never been clearer. Be bold.
+              Start your journey today.
+            </p>
             <input type="text" />
 
-            <div height="110" width="500"> <circle cx="50" cy="55" r="45" fill="none" stroke="#F0CE01" strokeWidth="4" /> <text textAnchor="middle" x="250" y="55"> Circle Text</text> </div>
-
+            <div className="circle flex relative justify-center items-center rounded-[50%] w-[200px] h-[200px] mt-5">
+              <div
+                className="absolute w-[30px] h-[30px] bg-cover rounded-[50%]"
+                style={{ backgroundImage: `url(${arrow})` }}></div>
+              <div className="absolute w-[100%] h-[100%] animate-spin-slow">
+                <p>{textRnd}</p>
+              </div>
+            </div>
           </div>
 
-          <div className='lg:w-[50%] w-full pl-14'>
+          <div className="lg:w-[50%] w-full pl-14">
             <div>
               <p className={`${styles.textParagraph}`}>Call us</p>
-              <h3 className='font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]'>+44 748 168 14 90</h3>
+              <h3 className="font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]">
+                +44 748 168 14 90
+              </h3>
             </div>
-            <div  className='pt-[50px]'>
+            <div className="pt-[50px]">
               <p className={`${styles.textParagraph}`}>Email us</p>
-              <h3 className='font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]'>contact@plexusavantmedia.com</h3>
+              <h3 className="font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]">
+                contact@plexusavantmedia.com
+              </h3>
             </div>
-            <div  className='pt-[50px]'>
+            <div className="pt-[50px]">
               <p className={`${styles.textParagraph}`}>Address</p>
-              <h3 className='font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]'>20-22 Wenlock Road London N1 7GU</h3>
+              <h3 className="font-medium md:text-[35px] text-[18px] md:leading-[60px] leading-[30px]">
+                20-22 Wenlock Road London N1 7GU
+              </h3>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
