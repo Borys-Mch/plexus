@@ -13,4 +13,4 @@
 
 ## Result
 
-[Plexus site](https://plexus.dbm.pp.ua/)
+[Plexus site](https://plexus.deren.icu/)
